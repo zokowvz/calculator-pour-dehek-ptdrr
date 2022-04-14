@@ -33,10 +33,10 @@ console.log(chalk.green("      \______  (____  /____/\___  >____/|____(____  /__
 console.log(chalk.green("             \/     \/          \/                \/               "))
 console.log("                 - Addition -")
 
-  var addinumber1 = rs.question('1er nombre\n ' + chalk.red("> ")) 
-  var addinumber2 = rs.question('2eme nombre \n ' + chalk.red('> '))
-  console.log(Number(addinumber1 + addinumber2))
-  let addiresult = Number(addinumber1 + addinumber2)
+  let addinumber1 = rs.question('1er nombre\n ' + chalk.red("> ")) 
+  let addinumber2 = rs.question('2eme nombre \n ' + chalk.red('> '))
+  let addiresult = parseInt(addinumber1) + parseInt(addinumber2)
+console.log(addiresult)
   cls
  console.log("Le resultat est " + chalk.blue(addiresult))
 }
@@ -55,7 +55,7 @@ console.log("                 - Multiplication -")
   console.log("Le resultat est " + chalk.blue(soustraresult))
   if(Number.NaN = soustraresult){
   }else(console.log(chalk.grey("poto faut mettre des chiffres")));
-  const soustradata = new Uint8Array(Buffer.from("--------SOUSTRACTION--------" + "\npseudo -> " + pseudo + '\ncalcul -> ' + multinumber1 + " - " + multinumber2 + "\nresultat ->" + multiresult));
+  const soustradata = new Uint8Array(Buffer.from("--------SOUSTRACTION--------" + "\npseudo -> " + pseudo + '\ncalcul -> ' + soustranumber1 + " - " + soustranumber2 + "\nresultat ->" + soustraresult));
   writeFile('log.txt', soustradata, (err) => {
     console.log(chalk.red("[+] ") + "Les Logs Calculs ont bien été save.");  
   })
