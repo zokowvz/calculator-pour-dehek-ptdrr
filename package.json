@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "readline-sync": "^1.4.10",
+    "supports-color": "^9.2.2",
+    "sync-request": "^6.1.0"
+  }
+}
