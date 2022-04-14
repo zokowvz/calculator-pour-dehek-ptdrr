@@ -7,6 +7,7 @@ const { exit } = require('process')
 const { exec, spawn, ChildProcess } = require('child_process')
 const logfile = require("./log/log.txt")
 const { writeFile, read } = require("fs")  
+lightgen = "discord.gg/lightgen"
 let pseudo = rs.question("Quel est votre pseudo ?\n" + chalk.red("> "))
 console.clear();
 console.log(chalk.green("     _________        .__               .__          __                "))
